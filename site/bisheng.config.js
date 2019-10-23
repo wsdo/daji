@@ -29,6 +29,7 @@ module.exports = {
   source: {
     components: './components',
     docs: './docs',
+    src: './src',
     changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
   },
   theme: './site/theme',

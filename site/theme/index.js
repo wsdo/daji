@@ -17,6 +17,19 @@ function pickerGenerator(module) {
   };
 }
 
+function pickerSrcGenerator(module) {
+  const tester = new RegExp(`^src/${module}`);
+  return markdownData => {
+    const { filename } = markdownData.meta;
+    if (tester.test(filename) && !/\/demo$/.test(path.dirname(filename))) {
+      return {
+        meta: markdownData.meta,
+      };
+    }
+    return null;
+  };
+}
+
 module.exports = {
   lazyLoad(nodePath, nodeValue) {
     if (typeof nodeValue === 'string') {
@@ -27,7 +40,11 @@ module.exports = {
   pick: {
     components(markdownData) {
       const { filename } = markdownData.meta;
-      if (!/^components/.test(filename) || /[/\\]demo$/.test(path.dirname(filename))) {
+      if (
+        !/^components/.test(filename) ||
+        !/^src/.test(filename) ||
+        /[/\\]demo$/.test(path.dirname(filename))
+      ) {
         return null;
       }
       return {
@@ -42,6 +59,7 @@ module.exports = {
       }
       return null;
     },
+    'src/common': pickerSrcGenerator('common'),
     'docs/react': pickerGenerator('react'),
     'docs/spec': pickerGenerator('spec'),
   },
@@ -65,9 +83,14 @@ module.exports = {
         component: homeTmpl,
       },
       {
+        path: 'src/common/:children',
+        component: contentTmpl,
+      },
+      {
         path: 'docs/react/:children',
         component: contentTmpl,
       },
+
       {
         path: 'changelog',
         component: contentTmpl,

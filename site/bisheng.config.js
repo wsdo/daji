@@ -96,9 +96,9 @@ module.exports = {
   webpackConfig(config) {
     // eslint-disable-next-line
     config.resolve.alias = {
-      'antd/lib': path.join(process.cwd(), 'components'),
-      'antd/es': path.join(process.cwd(), 'components'),
-      antd: path.join(process.cwd(), 'index'),
+      // 'antd/lib': path.join(process.cwd(), 'components'),
+      // 'antd/es': path.join(process.cwd(), 'components'),
+      // antd: path.join(process.cwd(), 'index'),
       '@daji': path.join(process.cwd(), 'src'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',

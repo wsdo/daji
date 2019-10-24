@@ -1,3 +1,3 @@
-import Editor from './common/editor';
+import Hi from './common/hi';
 
-export { Editor };
+export { Hi };

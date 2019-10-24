@@ -2,7 +2,7 @@
 category: Components
 type: 通用
 title: Editor
-subtitle: intro富文本编辑器
+subtitle: 富文本编辑器
 ---
 
 基于 quill 封装的 React 适用的富文本编辑器

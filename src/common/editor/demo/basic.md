@@ -3,12 +3,12 @@ order: 0
 title: 富文本编辑器
 ---
 
-基于 quill
+基本用法
 
 ```jsx
 import { Editor } from '@daji';
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     content: '',
     initialContent: '',

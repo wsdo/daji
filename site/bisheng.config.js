@@ -29,7 +29,6 @@ module.exports = {
   source: {
     components: './components',
     docs: './docs',
-    src: './src',
     changelog: ['CHANGELOG.zh-CN.md', 'CHANGELOG.en-US.md'],
   },
   theme: './site/theme',
@@ -96,9 +95,9 @@ module.exports = {
   webpackConfig(config) {
     // eslint-disable-next-line
     config.resolve.alias = {
-      // 'antd/lib': path.join(process.cwd(), 'components'),
-      // 'antd/es': path.join(process.cwd(), 'components'),
-      // antd: path.join(process.cwd(), 'index'),
+      'antd/lib': path.join(process.cwd(), 'components'),
+      'antd/es': path.join(process.cwd(), 'components'),
+      antd: path.join(process.cwd(), 'index'),
       '@daji': path.join(process.cwd(), 'src'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
@@ -131,8 +130,29 @@ module.exports = {
       test: /\.mjs$/,
       include: /node_modules/,
       type: 'javascript/auto',
-    });
-
+    },
+    {
+        test: /\.styl/,
+        use: [
+          'style-loader',
+          {
+            loader:'css-loader',
+            options: {importLoaders: 1}
+          },
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     plugins: [
+          //       autoprefixer({
+          //         browsers: ['> 1%', 'IE 7']
+          //       })
+          //     ]
+          //   }
+          // },
+          'stylus-loader',
+        ],
+      }
+      );
     config.plugins.push(new CSSSplitWebpackPlugin({ size: 4000 }));
 
     return config;

@@ -59,9 +59,9 @@ module.exports = {
       }
       return null;
     },
-    'src/common': pickerSrcGenerator('common'),
     'docs/react': pickerGenerator('react'),
     'docs/spec': pickerGenerator('spec'),
+    'docs/daji': pickerGenerator('daji'),
   },
   plugins: [
     'bisheng-plugin-description',
@@ -83,14 +83,13 @@ module.exports = {
         component: homeTmpl,
       },
       {
-        path: 'src/common/:children',
-        component: contentTmpl,
-      },
-      {
         path: 'docs/react/:children',
         component: contentTmpl,
       },
-
+      {
+        path: 'docs/daji/:children',
+        component: contentTmpl,
+      },
       {
         path: 'changelog',
         component: contentTmpl,

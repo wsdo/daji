@@ -37,6 +37,34 @@ if (process.env.RUN_ENV === 'PRODUCTION') {
     externalMoment(config);
     addLocales(config);
     // https://docs.packtracker.io/uploading-your-webpack-stats/webpack-plugin
+    config.module.rules.push(
+      [
+      {
+        test: /\.styl/,
+        use: [
+          'style-loader',
+          {
+            loader:'css-loader',
+            options: {importLoaders: 1}
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer({
+                  browsers: ['> 1%', 'IE 7']
+                })
+              ]
+            }
+          },
+          'stylus-loader',
+        ],
+        include: [
+          pathSrc
+        ]
+      },
+      ]
+    )
     config.plugins.push(
       new PacktrackerPlugin({
         project_token: '8adbb892-ee4a-4d6f-93bb-a03219fb6778',

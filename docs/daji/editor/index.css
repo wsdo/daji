@@ -1,0 +1,9 @@
+@import 'snow.css';
+
+.quillEditor {
+  line-height: 1.5;
+}
+
+.editor {
+  min-height: 100px;
+}

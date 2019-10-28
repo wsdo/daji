@@ -71,13 +71,13 @@ describe('site test', () => {
 
   it('Basic Pages en', async () => {
     const { status, $ } = await render('/');
-    expect($('title').text()).toEqual(`Ant Design - ${enUS.messages['app.home.slogan']}`);
+    expect($('title').text()).toEqual(`Daji Design - ${enUS.messages['app.home.slogan']}`);
     expect(status).toBe(200);
   });
 
   it('Basic Pages zh', async () => {
     const { status, $ } = await render('/index-cn');
-    expect($('title').text()).toEqual(`Ant Design - ${zhCN.messages['app.home.slogan']}`);
+    expect($('title').text()).toEqual(`Daji Design - ${zhCN.messages['app.home.slogan']}`);
     expect(status).toBe(200);
   });
 

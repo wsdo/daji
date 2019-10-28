@@ -20,25 +20,25 @@ const { Text } = Typography;
 
 ReactDOM.render(
   <div>
-    <Text>Ant Design</Text>
+    <Text>Daji Design</Text>
     <br />
-    <Text type="secondary">Ant Design</Text>
+    <Text type="secondary">Daji Design</Text>
     <br />
-    <Text type="warning">Ant Design</Text>
+    <Text type="warning">Daji Design</Text>
     <br />
-    <Text type="danger">Ant Design</Text>
+    <Text type="danger">Daji Design</Text>
     <br />
-    <Text disabled>Ant Design</Text>
+    <Text disabled>Daji Design</Text>
     <br />
-    <Text mark>Ant Design</Text>
+    <Text mark>Daji Design</Text>
     <br />
-    <Text code>Ant Design</Text>
+    <Text code>Daji Design</Text>
     <br />
-    <Text underline>Ant Design</Text>
+    <Text underline>Daji Design</Text>
     <br />
-    <Text delete>Ant Design</Text>
+    <Text delete>Daji Design</Text>
     <br />
-    <Text strong>Ant Design</Text>
+    <Text strong>Daji Design</Text>
   </div>,
   mountNode,
 );

@@ -12,8 +12,8 @@
 @form-help-margin-top: (@form-component-height - @form-component-max-height) / 2 + 2px;
 @form-explain-font-size: @font-size-base;
 // Extends additional 1px to fix precision issue.
-// https://github.com/ant-design/ant-design/issues/12803
-// https://github.com/ant-design/ant-design/issues/8220
+// https://github.com/wsdo/daji/issues/12803
+// https://github.com/wsdo/daji/issues/8220
 @form-explain-precision: 1px;
 @form-explain-height: floor(@form-explain-font-size * @line-height-base);
 
@@ -145,7 +145,7 @@ form {
     }
 
     // Fix overlapping between feedback icon and <Select>'s arrow.
-    // https://github.com/ant-design/ant-design/issues/4431
+    // https://github.com/wsdo/daji/issues/4431
     > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
     > .@{ant-prefix}-select .@{ant-prefix}-select-selection__clear,
     :not(.@{ant-prefix}-input-group-addon) > .@{ant-prefix}-select .@{ant-prefix}-select-arrow,
@@ -170,14 +170,14 @@ form {
       }
     }
 
-    // Fix issue: https://github.com/ant-design/ant-design/issues/7854
+    // Fix issue: https://github.com/wsdo/daji/issues/7854
     .@{ant-prefix}-input-search:not(.@{ant-prefix}-input-search-enter-button) {
       .@{ant-prefix}-input-suffix {
         right: 28px;
       }
     }
 
-    // Fix issue: https://github.com/ant-design/ant-design/issues/4783
+    // Fix issue: https://github.com/wsdo/daji/issues/4783
     .@{ant-prefix}-calendar-picker,
     .@{ant-prefix}-time-picker {
       &-icon,
@@ -233,7 +233,7 @@ form {
       margin-left: 8px;
     }
     &-handler-wrap {
-      z-index: 2; // https://github.com/ant-design/ant-design/issues/6289
+      z-index: 2; // https://github.com/wsdo/daji/issues/6289
     }
   }
 
@@ -248,7 +248,7 @@ form {
     width: auto;
   }
 
-  // fix input with addon position. https://github.com/ant-design/ant-design/issues/8243
+  // fix input with addon position. https://github.com/wsdo/daji/issues/8243
   :not(.@{ant-prefix}-input-group-wrapper) > .@{ant-prefix}-input-group,
   .@{ant-prefix}-input-group-wrapper {
     position: relative;

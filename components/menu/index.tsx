@@ -222,7 +222,7 @@ class InternalMenu extends React.Component<InternalMenuProps, MenuState> {
   }
 
   // Restore vertical mode when menu is collapsed responsively when mounted
-  // https://github.com/ant-design/ant-design/issues/13104
+  // https://github.com/wsdo/daji/issues/13104
   // TODO: not a perfect solution, looking a new way to avoid setting switchingModeFromInline in this situation
   handleMouseEnter = (e: MouseEvent) => {
     this.restoreModeVerticalFromInline();
@@ -234,11 +234,11 @@ class InternalMenu extends React.Component<InternalMenuProps, MenuState> {
 
   handleTransitionEnd = (e: TransitionEvent) => {
     // when inlineCollapsed menu width animation finished
-    // https://github.com/ant-design/ant-design/issues/12864
+    // https://github.com/wsdo/daji/issues/12864
     const widthCollapsed = e.propertyName === 'width' && e.target === e.currentTarget;
 
     // Fix SVGElement e.target.className.indexOf is not a function
-    // https://github.com/ant-design/ant-design/issues/15699
+    // https://github.com/wsdo/daji/issues/15699
     const { className } = e.target as HTMLElement | SVGElement;
     // SVGAnimatedString.animVal should be identical to SVGAnimatedString.baseVal, unless during an animation.
     const classNameValue =
@@ -247,7 +247,7 @@ class InternalMenu extends React.Component<InternalMenuProps, MenuState> {
         : className;
 
     // Fix for <Menu style={{ width: '100%' }} />, the width transition won't trigger when menu is collapsed
-    // https://github.com/ant-design/ant-design-pro/issues/2783
+    // https://github.com/wsdo/daji-pro/issues/2783
     const iconScaled = e.propertyName === 'font-size' && classNameValue.indexOf('anticon') >= 0;
     if (widthCollapsed || iconScaled) {
       this.restoreModeVerticalFromInline();
@@ -307,7 +307,7 @@ class InternalMenu extends React.Component<InternalMenuProps, MenuState> {
       menuProps.onClick = this.handleClick;
     }
 
-    // https://github.com/ant-design/ant-design/issues/8587
+    // https://github.com/wsdo/daji/issues/8587
     const hideMenu =
       this.getInlineCollapsed() &&
       (collapsedWidth === 0 || collapsedWidth === '0' || collapsedWidth === '0px');

@@ -56,4 +56,4 @@ const dataSource = ['12345', '23456', '34567'];
 
 Please use `onChange` to manage control state. `onSearch` is used for searching input which is not same as `onChange`. Besides, click on the option also not trigger the `onSearch` event.
 
-Related issue: [#18230](https://github.com/ant-design/ant-design/issues/18230) [#17916](https://github.com/ant-design/ant-design/issues/17916)
+Related issue: [#18230](https://github.com/wsdo/daji/issues/18230) [#17916](https://github.com/wsdo/daji/issues/17916)

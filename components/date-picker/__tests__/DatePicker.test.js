@@ -69,7 +69,7 @@ describe('DatePicker', () => {
     expect(wrapper.render()).toMatchSnapshot();
   });
 
-  // Fix https://github.com/ant-design/ant-design/issues/8885
+  // Fix https://github.com/wsdo/daji/issues/8885
   it('control value after panel closed', () => {
     class Test extends React.Component {
       state = {

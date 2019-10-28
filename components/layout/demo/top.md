@@ -47,7 +47,7 @@ ReactDOM.render(
       </Breadcrumb>
       <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center' }}>Daji Design ©2018 Created by Ant UED</Footer>
   </Layout>,
   mountNode,
 );

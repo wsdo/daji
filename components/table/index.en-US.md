@@ -73,8 +73,8 @@ const columns = [
 | expandRowByClick | Whether to expand row by clicking anywhere in the whole row | boolean | `false` | 3.0.1 |
 | footer | Table footer renderer | Function(currentPageData) |  |  |
 | indentSize | Indent size in pixels of tree data | number | 15 |  |
-| loading | Loading status of table | boolean\|[object](https://ant.design/components/spin-cn/#API) ([more](https://github.com/ant-design/ant-design/issues/4544#issuecomment-271533135)) | `false` |  |
-| locale | i18n text including filter, sort, empty text, etc | object | filterConfirm: 'Ok' <br> filterReset: 'Reset' <br> emptyText: 'No Data' <br> [Default](https://github.com/ant-design/ant-design/issues/575#issuecomment-159169511) |  |
+| loading | Loading status of table | boolean\|[object](https://ant.design/components/spin-cn/#API) ([more](https://github.com/wsdo/daji/issues/4544#issuecomment-271533135)) | `false` |  |
+| locale | i18n text including filter, sort, empty text, etc | object | filterConfirm: 'Ok' <br> filterReset: 'Reset' <br> emptyText: 'No Data' <br> [Default](https://github.com/wsdo/daji/issues/575#issuecomment-159169511) |  |
 | pagination | Config of pagination. You can ref table pagination [config](#pagination) or full [`pagination`](/components/pagination/) document, hide it by setting it to `false` | object |  |  |
 | rowClassName | Row's className | Function(record, index):string | - |  |
 | rowKey | Row's unique key, could be a string or function that returns a string | string\|Function(record):string | `key` |  |
@@ -139,7 +139,7 @@ One of the Table `columns` prop for describing the table's columns, Column has t
 | sortOrder | Order of sorted values: `'ascend'` `'descend'` `false` | boolean\|string | - |  |
 | sortDirections | supported sort way, could be `'ascend'`, `'descend'` | Array | `['ascend', 'descend']` | 3.15.2 |
 | title | Title of this column | ReactNode\|({ sortOrder, sortColumn, filters }) => ReactNode | - |  |
-| width | Width of this column ([width not working?](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)) | string\|number | - |  |
+| width | Width of this column ([width not working?](https://github.com/wsdo/daji/issues/13825#issuecomment-449889241)) | string\|number | - |  |
 | onCell | Set props on per cell | Function(record, rowIndex) | - |  |
 | onFilter | Callback executed when the confirm filter button is clicked | Function | - |  |
 | onFilterDropdownVisibleChange | Callback executed when `filterDropdownVisible` is changed | function(visible) {} | - |  |

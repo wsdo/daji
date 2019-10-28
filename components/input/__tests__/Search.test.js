@@ -136,7 +136,7 @@ describe('Input.Search', () => {
     );
   });
 
-  // https://github.com/ant-design/ant-design/issues/14785
+  // https://github.com/wsdo/daji/issues/14785
   it('should support addonAfter', () => {
     const addonAfter = <span>Addon After</span>;
     const wrapper = mount(<Search addonAfter={addonAfter} />);
@@ -145,7 +145,7 @@ describe('Input.Search', () => {
     expect(wrapperWithEnterButton.render()).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/18729
+  // https://github.com/wsdo/daji/issues/18729
   it('should trigger onSearch when click clear icon', () => {
     const onSearch = jest.fn();
     const onChange = jest.fn();

@@ -24,7 +24,7 @@ subtitle: 日期选择框
 
 默认配置为 en-US，如果你需要设置其他语言，推荐在入口处使用我们提供的国际化组件，详见：[ConfigProvider 国际化](http://ant.design/components/config-provider-cn/)。
 
-如有特殊需求（仅修改单一组件的语言），请使用 locale 参数，参考：[默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json)。
+如有特殊需求（仅修改单一组件的语言），请使用 locale 参数，参考：[默认配置](https://github.com/wsdo/daji/blob/master/components/date-picker/locale/example.json)。
 
 ```jsx
 import locale from 'antd/es/date-picker/locale/zh_CN';
@@ -57,7 +57,7 @@ moment.locale('zh-cn');
 | disabledDate | 不可选择的日期 | (currentDate: moment) => boolean | 无 |  |
 | dropdownClassName | 额外的弹出日历 className | string | - | 3.3.0 |
 | getCalendarContainer | 定义浮层的容器，默认为 body 上新建 div | function(trigger) | 无 |  |
-| locale | 国际化配置 | object | [默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |  |
+| locale | 国际化配置 | object | [默认配置](https://github.com/wsdo/daji/blob/master/components/date-picker/locale/example.json) |  |
 | mode | 日期面板的状态（[设置后无法选择年份/月份？](/docs/react/faq#当我指定了-DatePicker/RangePicker-的-mode-属性后，点击后无法选择年份/月份？)） | `time|date|month|year|decade` | 'date' |  |
 | open | 控制弹层是否展开 | boolean | - |  |
 | placeholder | 输入框提示文字 | string\|RangePicker\[] | - |  |

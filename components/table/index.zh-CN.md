@@ -10,7 +10,7 @@ subtitle: 表格
 
 ## 设计师专属
 
-安装 [Kitchen Sketch 插件 💎](https://kitchen.alipay.com/)，两步就可以自动生成 Ant Design 表格组件。
+安装 [Kitchen Sketch 插件 💎](https://kitchen.alipay.com/)，两步就可以自动生成 Daji Design 表格组件。
 
 ## 何时使用
 
@@ -78,8 +78,8 @@ const columns = [
 | expandRowByClick | 通过点击行来展开子行 | boolean | `false` | 3.0.1 |
 | footer | 表格尾部 | Function(currentPageData) |  |  |
 | indentSize | 展示树形数据时，每层缩进的宽度，以 px 为单位 | number | 15 |  |
-| loading | 页面是否加载中 | boolean\|[object](https://ant.design/components/spin-cn/#API) ([更多](https://github.com/ant-design/ant-design/issues/4544#issuecomment-271533135)) | false |  |
-| locale | 默认文案设置，目前包括排序、过滤、空数据文案 | object | filterConfirm: '确定' <br> filterReset: '重置' <br> emptyText: '暂无数据' <br> [默认值](https://github.com/ant-design/ant-design/issues/575#issuecomment-159169511) |  |
+| loading | 页面是否加载中 | boolean\|[object](https://ant.design/components/spin-cn/#API) ([更多](https://github.com/wsdo/daji/issues/4544#issuecomment-271533135)) | false |  |
+| locale | 默认文案设置，目前包括排序、过滤、空数据文案 | object | filterConfirm: '确定' <br> filterReset: '重置' <br> emptyText: '暂无数据' <br> [默认值](https://github.com/wsdo/daji/issues/575#issuecomment-159169511) |  |
 | pagination | 分页器，参考[配置项](#pagination)或 [pagination](/components/pagination/) 文档，设为 false 时不展示和进行分页 | object |  |  |
 | rowClassName | 表格行的类名 | Function(record, index):string | - |  |
 | rowKey | 表格行 key 的取值，可以是字符串或一个函数 | string\|Function(record):string | 'key' |  |
@@ -144,7 +144,7 @@ const columns = [
 | sortOrder | 排序的受控属性，外界可用此控制列的排序，可设置为 `'ascend'` `'descend'` `false` | boolean\|string | - |  |
 | sortDirections | 支持的排序方式，取值为 `'ascend'` `'descend'` | Array | `['ascend', 'descend']` | 3.15.2 |
 | title | 列头显示文字（函数用法 `3.10.0` 后支持） | ReactNode\|({ sortOrder, sortColumn, filters }) => ReactNode | - |  |
-| width | 列宽度（[指定了也不生效？](https://github.com/ant-design/ant-design/issues/13825#issuecomment-449889241)） | string\|number | - |  |
+| width | 列宽度（[指定了也不生效？](https://github.com/wsdo/daji/issues/13825#issuecomment-449889241)） | string\|number | - |  |
 | onCell | 设置单元格属性 | Function(record, rowIndex) | - |  |
 | onFilter | 本地模式下，确定筛选的运行函数 | Function | - |  |
 | onFilterDropdownVisibleChange | 自定义筛选菜单可见变化时调用 | function(visible) {} | - |  |

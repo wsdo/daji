@@ -30,7 +30,7 @@ describe('Breadcrumb', () => {
     );
   });
 
-  // https://github.com/ant-design/ant-design/issues/5015
+  // https://github.com/wsdo/daji/issues/5015
   it('should allow Breadcrumb.Item is null or undefined', () => {
     const wrapper = render(
       <Breadcrumb>
@@ -43,7 +43,7 @@ describe('Breadcrumb', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/5542
+  // https://github.com/wsdo/daji/issues/5542
   it('should not display Breadcrumb Item when its children is falsy', () => {
     const wrapper = render(
       <Breadcrumb>
@@ -55,7 +55,7 @@ describe('Breadcrumb', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/18260
+  // https://github.com/wsdo/daji/issues/18260
   it('filter React.Fragment', () => {
     const wrapper = render(
       <Breadcrumb separator="">

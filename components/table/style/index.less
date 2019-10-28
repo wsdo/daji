@@ -22,13 +22,13 @@
   }
 
   &-empty &-body {
-    // https://github.com/ant-design/ant-design/issues/11135
+    // https://github.com/wsdo/daji/issues/11135
     overflow-x: auto !important;
-    // https://github.com/ant-design/ant-design/issues/17175
+    // https://github.com/wsdo/daji/issues/17175
     overflow-y: hidden !important;
   }
 
-  // https://github.com/ant-design/ant-design/issues/17611
+  // https://github.com/wsdo/daji/issues/17611
   table {
     width: 100%;
     text-align: left;
@@ -123,12 +123,12 @@
 
     &.@{table-prefix-cls}-column-has-actions {
       position: relative;
-      background-clip: padding-box; // For Firefox background bug, https://github.com/ant-design/ant-design/issues/12628
+      background-clip: padding-box; // For Firefox background bug, https://github.com/wsdo/daji/issues/12628
       /* stylelint-disable-next-line */
-      -webkit-background-clip: border-box; // For Chrome extra space: https://github.com/ant-design/ant-design/issues/14926
+      -webkit-background-clip: border-box; // For Chrome extra space: https://github.com/wsdo/daji/issues/14926
 
       &.@{table-prefix-cls}-column-has-filters {
-        // https://github.com/ant-design/ant-design/issues/12650
+        // https://github.com/wsdo/daji/issues/12650
         padding-right: 30px !important;
 
         .@{iconfont-css-prefix}-filter,
@@ -305,13 +305,13 @@
     }
   }
 
-  // https://github.com/ant-design/ant-design/issues/4373
+  // https://github.com/wsdo/daji/issues/4373
   &-without-column-header &-title + &-content,
   &-without-column-header table {
     border-radius: 0;
   }
 
-  // https://github.com/ant-design/ant-design/issues/14834
+  // https://github.com/wsdo/daji/issues/14834
   &-without-column-header&-bordered&-empty &-placeholder {
     border-top: 1px solid @border-color-split;
     border-radius: @border-radius-base;
@@ -449,7 +449,7 @@
       border-radius: @border-radius-base @border-radius-base 0 0;
       box-shadow: none;
 
-      // https://github.com/ant-design/ant-design/issues/4916
+      // https://github.com/wsdo/daji/issues/4916
       &-without-submenu {
         max-height: 400px;
         overflow-x: hidden;
@@ -620,7 +620,7 @@
     table {
       min-width: 100%;
 
-      // https://github.com/ant-design/ant-design/issues/14545
+      // https://github.com/wsdo/daji/issues/14545
       .@{table-prefix-cls}-fixed-columns-in-body {
         visibility: hidden;
       }
@@ -645,7 +645,7 @@
     padding-bottom: 20px;
     overflow: scroll;
     // Workaround for additional scroll bar on the table header
-    // https://github.com/ant-design/ant-design/issues/6515#issuecomment-419634369
+    // https://github.com/wsdo/daji/issues/6515#issuecomment-419634369
     opacity: 0.9999;
 
     &::-webkit-scrollbar {
@@ -655,7 +655,7 @@
   }
 
   &-hide-scrollbar {
-    // https://github.com/ant-design/ant-design/issues/4637
+    // https://github.com/wsdo/daji/issues/4637
     // https://stackoverflow.com/a/54101063
     // https://github.com/react-component/table/pull/333
     scrollbar-color: transparent transparent;
@@ -728,7 +728,7 @@
       border-radius: 0 @table-border-radius-base 0 0;
     }
     // hide expand row content in right-fixed Table
-    // https://github.com/ant-design/ant-design/issues/1898
+    // https://github.com/wsdo/daji/issues/1898
     .@{table-prefix-cls}-expanded-row {
       color: transparent;
       pointer-events: none;
@@ -784,7 +784,7 @@
 * Another fix of Firefox:
 */
 @supports (-moz-appearance: meterbar) {
-  // https://github.com/ant-design/ant-design/issues/12628
+  // https://github.com/wsdo/daji/issues/12628
   .@{table-prefix-cls}-thead > tr > th.@{table-prefix-cls}-column-has-actions {
     background-clip: padding-box;
   }

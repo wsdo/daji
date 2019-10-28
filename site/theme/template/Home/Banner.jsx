@@ -46,22 +46,14 @@ const Banner = ({ isMobile }) => {
           </div>
         )}
         <QueueAnim className="text-wrapper" key="text" type="bottom">
-          <h1 key="h1">Ant Design</h1>
+          <h1 key="h1">Daji Design</h1>
           <p key="p">
             <FormattedMessage id="app.home.introduce" />
           </p>
           <div className="banner-btns" key="buttons">
-            <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN)}>
+            <Link to={utils.getLocalizedPathname('/docs/daji/introduce', isZhCN)}>
               <Button type="primary" className="banner-btn components">
                 <FormattedMessage id="app.home.getting-started" />
-              </Button>
-            </Link>
-            <Link
-              to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN)}
-              style={{ marginLeft: 16 }}
-            >
-              <Button className="banner-btn language">
-                <FormattedMessage id="app.home.design-language" />
               </Button>
             </Link>
             {!isMobile && (
@@ -85,14 +77,14 @@ const Banner = ({ isMobile }) => {
               <FormattedMessage id="app.home.recommend" />
             </Divider>
             <a
-              href="https://www.yuque.com/?chInfo=ch_antd"
+              href="https://www.yuque.com/gitfe"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => {
                 if (window.gtag) {
                   window.gtag('event', '点击', {
                     event_category: '首页推广',
-                    event_label: 'https://www.yuque.com/?chInfo=ch_antd',
+                    event_label: 'https://www.yuque.com/gitfe',
                   });
                 }
               }}

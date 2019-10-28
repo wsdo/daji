@@ -20,7 +20,7 @@ function finalizeCompile() {
     console.log('Wrote version into lib/version/index.js');
 
     // Build package.json version to lib/version/index.d.ts
-    // prevent https://github.com/ant-design/ant-design/issues/4935
+    // prevent https://github.com/wsdo/daji/issues/4935
     const versionDefPath = path.join(process.cwd(), 'lib', 'version', 'index.d.ts');
     fs.writeFileSync(
       versionDefPath,

@@ -83,7 +83,7 @@ describe('Button', () => {
     expect(wrapper.find('.ant-btn').hasClass('ant-btn-two-chinese-chars')).toBe(true);
   });
 
-  // https://github.com/ant-design/ant-design/issues/18118
+  // https://github.com/wsdo/daji/issues/18118
   it('should not insert space to link button', () => {
     const wrapper = render(<Button type="link">按钮</Button>);
     expect(wrapper).toMatchSnapshot();
@@ -202,7 +202,7 @@ describe('Button', () => {
     expect(wrapper.render()).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/15342
+  // https://github.com/wsdo/daji/issues/15342
   it('should merge text if children using variable', () => {
     const wrapper = mount(
       <Button>

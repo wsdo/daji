@@ -109,7 +109,7 @@ describe('Form', () => {
     errorSpy.mockRestore();
   });
 
-  // https://github.com/ant-design/ant-design/issues/14911
+  // https://github.com/wsdo/daji/issues/14911
   it('should not print warning for not generating help and validateStatus automatically when help or validateStatus is specified', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     const Form1 = Form.create()(({ form }) => {

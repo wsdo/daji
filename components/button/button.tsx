@@ -88,7 +88,7 @@ export interface BaseButtonProps {
 
 // Typescript will make optional not optional if use Pick with union.
 // Should change to `AnchorButtonProps | NativeButtonProps` and `any` to `HTMLAnchorElement | HTMLButtonElement` if it fixed.
-// ref: https://github.com/ant-design/ant-design/issues/15930
+// ref: https://github.com/wsdo/daji/issues/15930
 export type AnchorButtonProps = {
   href: string;
   target?: string;

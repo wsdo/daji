@@ -159,7 +159,7 @@ describe('Form', () => {
     expect(wrapper.find('.ant-form-item-control-wrapper.ant-col-14').length).toBe(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/7351
+  // https://github.com/wsdo/daji/issues/7351
   it('focus correct input when click label', () => {
     const Form1 = Form.create()(({ form }) => (
       <Form>
@@ -199,7 +199,7 @@ describe('Form', () => {
     ).toBe(document.activeElement);
   });
 
-  // https://github.com/ant-design/ant-design/issues/7693
+  // https://github.com/wsdo/daji/issues/7693
   it('should not throw error when is not a valid id', () => {
     const Form1 = Form.create()(({ form }) => (
       <Form>

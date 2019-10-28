@@ -181,7 +181,7 @@ describe('Table.sorter', () => {
     expect(renderedNames(wrapper)).toEqual(['Tom', 'Lucy', 'Jack', 'Jerry']);
   });
 
-  // https://github.com/ant-design/ant-design/issues/11246#issuecomment-405009167
+  // https://github.com/wsdo/daji/issues/11246#issuecomment-405009167
   it('Allow column title as render props with sortOrder argument', () => {
     const title = ({ sortOrder }) => <div className="custom-title">{sortOrder}</div>;
     const columns = [
@@ -205,7 +205,7 @@ describe('Table.sorter', () => {
     expect(wrapper.find('.custom-title').text()).toEqual('descend');
   });
 
-  // https://github.com/ant-design/ant-design/pull/12264#discussion_r218053034
+  // https://github.com/wsdo/daji/pull/12264#discussion_r218053034
   it('should sort from begining state when toggle from different columns', () => {
     const columns = [
       {
@@ -258,7 +258,7 @@ describe('Table.sorter', () => {
     ).toContain(' on');
   });
 
-  // https://github.com/ant-design/ant-design/issues/12571
+  // https://github.com/wsdo/daji/issues/12571
   it('should toggle sort state when columns are put in render', () => {
     const testData = [
       { key: 0, name: 'Jack', age: 11 },
@@ -353,7 +353,7 @@ describe('Table.sorter', () => {
     ).toContain(' off');
   });
 
-  // https://github.com/ant-design/ant-design/issues/12737
+  // https://github.com/wsdo/daji/issues/12737
   it('should toggle sort state when columns with non primitive properties are put in render', () => {
     const testData = [
       { key: 0, name: 'Jack', age: 11 },
@@ -449,7 +449,7 @@ describe('Table.sorter', () => {
     ).toContain(' off');
   });
 
-  // https://github.com/ant-design/ant-design/issues/12870
+  // https://github.com/wsdo/daji/issues/12870
   it('should toggle sort state when columns with key are put in render', () => {
     const testData = [
       { key: 0, name: 'Jack', age: 11 },

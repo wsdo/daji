@@ -35,7 +35,7 @@ It accepts all props which native button support.
 
 ### How to remove space between 2 chinese characters?
 
-Following Ant Design specification, we will add one space between if Button contains two chinese characters only. If you don't need that, you can use [ConfigProvider](/components/config-provider/#API) to set `autoInsertSpaceInButton` as `false`.
+Following Daji Design specification, we will add one space between if Button contains two chinese characters only. If you don't need that, you can use [ConfigProvider](/components/config-provider/#API) to set `autoInsertSpaceInButton` as `false`.
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/Hz5HL9gsT4/f29f170d-b78d-4d2b-aa71-0da6a9ead4d9.png)
 

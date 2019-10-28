@@ -112,7 +112,7 @@ describe('Table.rowSelection', () => {
     expect(checkboxAll.instance().state).toEqual({ checked: true, indeterminate: false });
   });
 
-  // https://github.com/ant-design/ant-design/issues/4020
+  // https://github.com/wsdo/daji/issues/4020
   it('handles defaultChecked', () => {
     const rowSelection = {
       getCheckboxProps: record => ({
@@ -400,7 +400,7 @@ describe('Table.rowSelection', () => {
     expect(handleSelectEven).toHaveBeenCalledWith([0, 1, 2, 3]);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4245
+  // https://github.com/wsdo/daji/issues/4245
   it('handles disabled checkbox correctly when dataSource changes', () => {
     const rowSelection = {
       getCheckboxProps: record => ({ disabled: record.disabled }),
@@ -416,7 +416,7 @@ describe('Table.rowSelection', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/4245
+  // https://github.com/wsdo/daji/issues/4245
   it('should allow dynamic getCheckboxProps', () => {
     class App extends React.Component {
       state = {
@@ -446,7 +446,7 @@ describe('Table.rowSelection', () => {
     expect(checkboxs.at(2).props().disabled).toBe(true);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4779
+  // https://github.com/wsdo/daji/issues/4779
   it('should not switch pagination when select record', () => {
     const newData = [];
     for (let i = 0; i < 20; i += 1) {
@@ -542,7 +542,7 @@ describe('Table.rowSelection', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/10629
+  // https://github.com/wsdo/daji/issues/10629
   it('should keep all checked state when remove item from dataSource', () => {
     const wrapper = mount(
       <Table
@@ -571,7 +571,7 @@ describe('Table.rowSelection', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/11042
+  // https://github.com/wsdo/daji/issues/11042
   it('add columnTitle for rowSelection', () => {
     const wrapper = mount(
       <Table
@@ -602,7 +602,7 @@ describe('Table.rowSelection', () => {
     ).toBe('单选');
   });
 
-  // https://github.com/ant-design/ant-design/issues/11384
+  // https://github.com/wsdo/daji/issues/11384
   it('should keep item even if in filter', () => {
     const filterColumns = [
       {
@@ -704,7 +704,7 @@ describe('Table.rowSelection', () => {
     expect(checkboxAll.instance().state).toEqual({ indeterminate: false, checked: true });
   });
 
-  // https://github.com/ant-design/ant-design/issues/16614
+  // https://github.com/wsdo/daji/issues/16614
   it('should get selectedRows correctly when set childrenColumnName', () => {
     const onChange = jest.fn();
     const newDatas = [

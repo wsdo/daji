@@ -7701,12 +7701,12 @@ exports[`ConfigProvider components List configProvider 1`] = `
               <h4
                 class="config-list-item-meta-title"
               >
-                Ant Design
+                Daji Design
               </h4>
               <div
                 class="config-list-item-meta-description"
               >
-                Ant Design, a design language for background applications, is refined by Ant UED Team
+                Daji Design, a design language for background applications, is refined by Ant UED Team
               </div>
             </div>
           </div>
@@ -7753,12 +7753,12 @@ exports[`ConfigProvider components List normal 1`] = `
               <h4
                 class="ant-list-item-meta-title"
               >
-                Ant Design
+                Daji Design
               </h4>
               <div
                 class="ant-list-item-meta-description"
               >
-                Ant Design, a design language for background applications, is refined by Ant UED Team
+                Daji Design, a design language for background applications, is refined by Ant UED Team
               </div>
             </div>
           </div>
@@ -7805,12 +7805,12 @@ exports[`ConfigProvider components List prefixCls 1`] = `
               <h4
                 class="prefix-List-item-meta-title"
               >
-                Ant Design
+                Daji Design
               </h4>
               <div
                 class="prefix-List-item-meta-description"
               >
-                Ant Design, a design language for background applications, is refined by Ant UED Team
+                Daji Design, a design language for background applications, is refined by Ant UED Team
               </div>
             </div>
           </div>

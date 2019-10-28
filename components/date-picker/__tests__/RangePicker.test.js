@@ -117,7 +117,7 @@ describe('RangePicker', () => {
     expect(onCalendarChangeFn).toHaveBeenCalled();
   });
 
-  // issue: https://github.com/ant-design/ant-design/issues/5872
+  // issue: https://github.com/wsdo/daji/issues/5872
   it('should not throw error when value is reset to `[]`', () => {
     const birthday = moment('2000-01-01', 'YYYY-MM-DD');
     const wrapper = mount(
@@ -139,7 +139,7 @@ describe('RangePicker', () => {
     ).not.toThrow();
   });
 
-  // issue: https://github.com/ant-design/ant-design/issues/7077
+  // issue: https://github.com/wsdo/daji/issues/7077
   it('should not throw error when select after clear', () => {
     const wrapper = mount(<RangePicker getCalendarContainer={trigger => trigger} open />);
     let rangeCalendarWrapper = mount(
@@ -245,7 +245,7 @@ describe('RangePicker', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/6999
+  // https://github.com/wsdo/daji/issues/6999
   it('input date manually', () => {
     const wrapper = mount(<RangePicker open />);
     const dateString = '2008-12-31';
@@ -263,7 +263,7 @@ describe('RangePicker', () => {
     expect(handleOk).toHaveBeenCalledWith(range);
   });
 
-  // https://github.com/ant-design/ant-design/issues/9267
+  // https://github.com/wsdo/daji/issues/9267
   it('invali end date not throw error', () => {
     const wrapper = mount(<RangePicker />);
     wrapper.find('.ant-calendar-picker-input').simulate('click');
@@ -303,7 +303,7 @@ describe('RangePicker', () => {
     ).toBe('Jun2017');
   });
 
-  // https://github.com/ant-design/ant-design/issues/11631
+  // https://github.com/wsdo/daji/issues/11631
   it('triggers onOpenChange when click on preset range', () => {
     const handleOpenChange = jest.fn();
     const range = [moment().subtract(2, 'd'), moment()];
@@ -320,7 +320,7 @@ describe('RangePicker', () => {
     expect(wrapper.render()).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/13302
+  // https://github.com/wsdo/daji/issues/13302
   describe('in "month" mode, when the left and right panels select the same month', () => {
     it('left panel and right panel could be the same month', () => {
       const wrapper = mount(<RangePicker mode={['month', 'month']} />);
@@ -388,7 +388,7 @@ describe('RangePicker', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/17135
+  // https://github.com/wsdo/daji/issues/17135
   it('the end time should be less than the start time', () => {
     const wrapper = mount(<RangePicker defaultValue={[moment(), moment()]} />);
     wrapper.find('.ant-calendar-picker-input').simulate('click');

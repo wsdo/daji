@@ -37,8 +37,8 @@ class FilterMenu<T> extends React.Component<FilterMenuProps<T>, FilterMenuState<
      * if the state is visible the component should ignore updates on selectedKeys prop to avoid
      * that the user selection is lost
      * this happens frequently when a table is connected on some sort of realtime data
-     * Fixes https://github.com/ant-design/ant-design/issues/10289 and
-     * https://github.com/ant-design/ant-design/issues/10209
+     * Fixes https://github.com/wsdo/daji/issues/10289 and
+     * https://github.com/wsdo/daji/issues/10209
      */
     if (
       'selectedKeys' in nextProps &&
@@ -92,8 +92,8 @@ class FilterMenu<T> extends React.Component<FilterMenuProps<T>, FilterMenuState<
     if (filterBelongToScrollBody) {
       // When fixed column have filters, there will be two dropdown menus
       // Filter dropdown menu inside scroll body should never be shown
-      // To fix https://github.com/ant-design/ant-design/issues/5010 and
-      // https://github.com/ant-design/ant-design/issues/7909
+      // To fix https://github.com/wsdo/daji/issues/5010 and
+      // https://github.com/wsdo/daji/issues/7909
       this.neverShown = !!column.fixed;
     }
   };
@@ -125,14 +125,14 @@ class FilterMenu<T> extends React.Component<FilterMenuProps<T>, FilterMenuState<
     this.setVisible(false);
 
     // Call `setSelectedKeys` & `confirm` in the same time will make filter data not up to date
-    // https://github.com/ant-design/ant-design/issues/12284
+    // https://github.com/wsdo/daji/issues/12284
     this.setState({}, this.confirmFilter);
   };
 
   onVisibleChange = (visible: boolean) => {
     this.setVisible(visible);
     const { column } = this.props;
-    // https://github.com/ant-design/ant-design/issues/17833
+    // https://github.com/wsdo/daji/issues/17833
     if (!visible && !(column.filterDropdown instanceof Function)) {
       this.confirmFilter();
     }

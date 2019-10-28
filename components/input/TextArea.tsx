@@ -130,7 +130,7 @@ class TextArea extends React.Component<TextAreaProps, TextAreaState> {
       ...textareaStyles,
       ...(resizing ? { overflow: 'hidden' } : null),
     };
-    // Fix https://github.com/ant-design/ant-design/issues/6776
+    // Fix https://github.com/wsdo/daji/issues/6776
     // Make sure it could be reset when using form.getFieldDecorator
     if ('value' in otherProps) {
       otherProps.value = otherProps.value || '';

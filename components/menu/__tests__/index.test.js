@@ -214,8 +214,8 @@ describe('Menu', () => {
     ).not.toBe(true);
   });
 
-  // https://github.com/ant-design/ant-design/pulls/4677
-  // https://github.com/ant-design/ant-design/issues/4692
+  // https://github.com/wsdo/daji/pulls/4677
+  // https://github.com/wsdo/daji/issues/4692
   // TypeError: Cannot read property 'indexOf' of undefined
   it('pr #4677 and issue #4692', () => {
     const wrapper = mount(
@@ -674,8 +674,8 @@ describe('Menu', () => {
     jest.useRealTimers();
   });
 
-  // https://github.com/ant-design/ant-design/issues/18825
-  // https://github.com/ant-design/ant-design/issues/8587
+  // https://github.com/wsdo/daji/issues/18825
+  // https://github.com/wsdo/daji/issues/8587
   it('should keep selectedKeys in state when collapsed to 0px', () => {
     jest.useFakeTimers();
     const wrapper = mount(

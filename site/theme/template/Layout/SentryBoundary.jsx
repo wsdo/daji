@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as Sentry from '@sentry/browser';
 
 // Temp remove sentry since this break the demo:
-// https://github.com/ant-design/ant-design/issues/14576
+// https://github.com/wsdo/daji/issues/14576
 // Sentry.init({
 //   dsn: 'https://41977dd48e5b4da2aa3600ccbe7dda6d@sentry.io/1375756',
 // });

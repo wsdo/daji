@@ -31,7 +31,7 @@ const props = {
           ctx.drawImage(img, 0, 0);
           ctx.fillStyle = 'red';
           ctx.textBaseline = 'middle';
-          ctx.fillText('Ant Design', 20, 20);
+          ctx.fillText('Daji Design', 20, 20);
           canvas.toBlob(resolve);
         };
       };

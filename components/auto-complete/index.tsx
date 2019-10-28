@@ -78,7 +78,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, {}>
         <Input />
       );
     const elementProps = { ...(element as React.ReactElement<any>).props };
-    // https://github.com/ant-design/ant-design/pull/7742
+    // https://github.com/wsdo/daji/pull/7742
     delete elementProps.children;
     return <InputElement {...elementProps}>{element}</InputElement>;
   };

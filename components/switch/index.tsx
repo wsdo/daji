@@ -34,7 +34,7 @@ export default class Switch extends React.Component<SwitchProps, {}> {
 
   static propTypes = {
     prefixCls: PropTypes.string,
-    // HACK: https://github.com/ant-design/ant-design/issues/5368
+    // HACK: https://github.com/wsdo/daji/issues/5368
     // size=default and size=large are the same
     size: PropTypes.oneOf(['small', 'default', 'large']) as PropTypes.Requireable<
       SwitchProps['size']

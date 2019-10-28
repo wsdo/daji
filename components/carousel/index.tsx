@@ -16,13 +16,13 @@ if (typeof window !== 'undefined') {
       removeListener() {},
     };
   };
-  // ref: https://github.com/ant-design/ant-design/issues/18774
+  // ref: https://github.com/wsdo/daji/issues/18774
   if (!window.matchMedia) window.matchMedia = matchMediaPolyfill as any;
 }
 // Use require over import (will be lifted up)
 // make sure matchMedia polyfill run before require('react-slick')
-// Fix https://github.com/ant-design/ant-design/issues/6560
-// Fix https://github.com/ant-design/ant-design/issues/3308
+// Fix https://github.com/wsdo/daji/issues/6560
+// Fix https://github.com/wsdo/daji/issues/3308
 const SlickCarousel = require('react-slick').default;
 
 export type CarouselEffect = 'scrollx' | 'fade';
@@ -69,7 +69,7 @@ export default class Carousel extends React.Component<CarouselProps, {}> {
     if (autoplay) {
       window.addEventListener('resize', this.onWindowResized);
     }
-    // https://github.com/ant-design/ant-design/issues/7191
+    // https://github.com/wsdo/daji/issues/7191
     this.innerSlider = this.slick && this.slick.innerSlider;
   }
 
@@ -102,7 +102,7 @@ export default class Carousel extends React.Component<CarouselProps, {}> {
   };
 
   onWindowResized = () => {
-    // Fix https://github.com/ant-design/ant-design/issues/2550
+    // Fix https://github.com/wsdo/daji/issues/2550
     const { autoplay } = this.props;
     if (autoplay && this.slick && this.slick.innerSlider && this.slick.innerSlider.autoPlay) {
       this.slick.innerSlider.autoPlay();

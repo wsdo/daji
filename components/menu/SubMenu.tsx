@@ -28,7 +28,7 @@ class SubMenu extends React.Component<SubMenuProps, any> {
     antdMenuTheme: PropTypes.string,
   };
 
-  // fix issue:https://github.com/ant-design/ant-design/issues/8666
+  // fix issue:https://github.com/wsdo/daji/issues/8666
   static isSubMenu = 1;
 
   private subMenu: any;

@@ -20,10 +20,10 @@ const { Title } = Typography;
 
 ReactDOM.render(
   <div>
-    <Title>h1. Ant Design</Title>
-    <Title level={2}>h2. Ant Design</Title>
-    <Title level={3}>h3. Ant Design</Title>
-    <Title level={4}>h4. Ant Design</Title>
+    <Title>h1. Daji Design</Title>
+    <Title level={2}>h2. Daji Design</Title>
+    <Title level={3}>h3. Daji Design</Title>
+    <Title level={4}>h4. Daji Design</Title>
   </div>,
   mountNode,
 );

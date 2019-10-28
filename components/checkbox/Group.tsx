@@ -85,7 +85,7 @@ class CheckboxGroup extends React.Component<CheckboxGroupProps, CheckboxGroupSta
         disabled: this.props.disabled,
         name: this.props.name,
 
-        // https://github.com/ant-design/ant-design/issues/16376
+        // https://github.com/wsdo/daji/issues/16376
         registerValue: this.registerValue,
         cancelValue: this.cancelValue,
       },

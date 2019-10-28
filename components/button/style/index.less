@@ -17,7 +17,7 @@
   .btn-default;
 
   // Make sure that the target of Button's click event always be `button`
-  // Ref: https://github.com/ant-design/ant-design/issues/7034
+  // Ref: https://github.com/wsdo/daji/issues/7034
   > i,
   > span {
     display: inline-block;
@@ -107,7 +107,7 @@
     transition: margin-left 0.3s @ease-in-out;
 
     // Follow icon blur under windows. Change the render.
-    // https://github.com/ant-design/ant-design/issues/13924
+    // https://github.com/wsdo/daji/issues/13924
     &.@{iconfont-css-prefix}-plus,
     &.@{iconfont-css-prefix}-minus {
       > svg {
@@ -188,14 +188,14 @@
     width: 100%;
   }
 
-  // https://github.com/ant-design/ant-design/issues/12681
+  // https://github.com/wsdo/daji/issues/12681
   &:empty {
     vertical-align: top;
   }
 }
 
 a.@{btn-prefix-cls} {
-  // Fixing https://github.com/ant-design/ant-design/issues/12978
+  // Fixing https://github.com/wsdo/daji/issues/12978
   // It is a render problem of chrome, which is only happened in the codesandbox demo
   // 0.1px for padding-top solution works and I don't why
   padding-top: 0.1px;

@@ -8,12 +8,12 @@
   .reset-component;
 
   &-input.@{ant-prefix}-input {
-    // Keep it static for https://github.com/ant-design/ant-design/issues/16738
+    // Keep it static for https://github.com/wsdo/daji/issues/16738
     position: static;
     width: 100%;
-    // https://github.com/ant-design/ant-design/issues/17582
+    // https://github.com/wsdo/daji/issues/17582
     padding-right: 24px;
-    // Add important to fix https://github.com/ant-design/ant-design/issues/5078
+    // Add important to fix https://github.com/wsdo/daji/issues/5078
     // because input.less will compile after cascader.less
     background-color: transparent !important;
     cursor: pointer;
@@ -112,7 +112,7 @@
     }
   }
 
-  // https://github.com/ant-design/ant-design/pull/12407#issuecomment-424657810
+  // https://github.com/wsdo/daji/pull/12407#issuecomment-424657810
   &-picker-label:hover + &-input {
     .hover;
   }
@@ -170,7 +170,7 @@
     vertical-align: top;
     list-style: none;
     border-right: @border-width-base @border-style-base @border-color-split;
-    -ms-overflow-style: -ms-autohiding-scrollbar; // https://github.com/ant-design/ant-design/issues/11857
+    -ms-overflow-style: -ms-autohiding-scrollbar; // https://github.com/wsdo/daji/issues/11857
 
     &:first-child {
       border-radius: @border-radius-base 0 0 @border-radius-base;

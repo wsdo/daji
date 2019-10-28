@@ -70,12 +70,12 @@ class Home extends React.Component {
       <>
         <style dangerouslySetInnerHTML={{ __html: getStyle() }} /> {/* eslint-disable-line */}
         <Helmet encodeSpecialCharacters={false}>
-          <title>{`Ant Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}</title>
+          <title>{`Daji Design - ${intl.formatMessage({ id: 'app.home.slogan' })}`}</title>
         </Helmet>
         <Banner {...childProps} />
         <Page1 {...childProps} />
-        <Page2 {...childProps} />
-        <Page3 {...childProps} />
+        {/* <Page2 {...childProps} /> */}
+        {/* <Page3 {...childProps} /> */}
         <Footer />
       </>
     );

@@ -6,7 +6,7 @@ import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 
 const objectOrNumber = PropTypes.oneOfType([PropTypes.object, PropTypes.number]);
 
-// https://github.com/ant-design/ant-design/issues/14324
+// https://github.com/wsdo/daji/issues/14324
 type ColSpanType = number | string;
 
 export interface ColSize {

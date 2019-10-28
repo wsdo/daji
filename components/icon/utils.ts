@@ -55,15 +55,15 @@ export function alias(type: string) {
     case 'cross':
       newType = 'close';
       break;
-    // https://github.com/ant-design/ant-design/issues/13007
+    // https://github.com/wsdo/daji/issues/13007
     case 'interation':
       newType = 'interaction';
       break;
-    // https://github.com/ant-design/ant-design/issues/16810
+    // https://github.com/wsdo/daji/issues/16810
     case 'canlendar':
       newType = 'calendar';
       break;
-    // https://github.com/ant-design/ant-design/issues/17448
+    // https://github.com/wsdo/daji/issues/17448
     case 'colum-height':
       newType = 'column-height';
       break;

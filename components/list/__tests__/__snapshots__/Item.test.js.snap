@@ -28,13 +28,13 @@ exports[`List Item Layout horizontal itemLayout List should accept extra node 1`
                 <a
                   href="http://ant.design"
                 >
-                  ant design
+                  Daji Design
                 </a>
               </h4>
               <div
                 class="ant-list-item-meta-description"
               >
-                Ant Design, a design language for background applications, is refined by Ant UED Team.
+                Daji Design, a design language for background applications, is refined by Ant UED Team.
               </div>
             </div>
           </div>

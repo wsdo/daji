@@ -12,7 +12,7 @@ if (typeof window !== 'undefined') {
       removeListener() {},
     };
   };
-  // ref: https://github.com/ant-design/ant-design/issues/18774
+  // ref: https://github.com/wsdo/daji/issues/18774
   if (!window.matchMedia) window.matchMedia = matchMediaPolyfill as any;
   // eslint-disable-next-line global-require
   enquire = require('enquire.js');

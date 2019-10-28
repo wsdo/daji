@@ -92,7 +92,7 @@ If the form has been decorated by `Form.create` then it has `this.props.form` pr
 | isFieldValidating | Check if the specified field is being validated. | Function(name) |  |
 | resetFields | Reset the specified fields' value(to `initialValue`) and status. If you don't specify a parameter, all the fields will be reset. | Function(\[names: string\[]]) |  |
 | setFields | Set value and error state of fields. [Code Sample](https://github.com/react-component/form/blob/3b9959b57ab30b41d8890ff30c79a7e7c383cad3/examples/server-validate.js#L74-L79) | ({<br />&nbsp;&nbsp;\[fieldName\]: {value: any, errors: \[Error\] }<br />}) => void |  |
-| setFieldsValue | Set the value of a field. (Note: please don't use it in `componentWillReceiveProps`, otherwise, it will cause an endless loop, [reason](https://github.com/ant-design/ant-design/issues/2985)) | (<br />&nbsp;&nbsp;{ \[fieldName\]&#x3A; value },<br />&nbsp;&nbsp;callback: Function<br />) => void |  |
+| setFieldsValue | Set the value of a field. (Note: please don't use it in `componentWillReceiveProps`, otherwise, it will cause an endless loop, [reason](https://github.com/wsdo/daji/issues/2985)) | (<br />&nbsp;&nbsp;{ \[fieldName\]&#x3A; value },<br />&nbsp;&nbsp;callback: Function<br />) => void |  |
 | validateFields | Validate the specified fields and get their values and errors. If you don't specify the parameter of fieldNames, you will validate all fields. | (<br />&nbsp;&nbsp;\[fieldNames: string\[]],<br />&nbsp;&nbsp;\[options: object\],<br />&nbsp;&nbsp;callback(errors, values)<br />) => void |  |
 | validateFieldsAndScroll | This function is similar to `validateFields`, but after validation, if the target field is not in visible area of form, form will be automatically scrolled to the target field area. | same as `validateFields` |  |
 
@@ -177,7 +177,7 @@ If you use `react@<15.3.0`, then, you can't use `getFieldDecorator` in stateless
 | id | The unique identifier is required. support [nested fields format](https://github.com/react-component/form/pull/48). | string |  |  |
 | options.getValueFromEvent | Specify how to get value from event or other onChange arguments | function(..args) | [reference](https://github.com/react-component/form#option-object) |  |
 | options.getValueProps | Get the component props according to field value. | function(value): any | [reference](https://github.com/react-component/form#option-object) | 3.9.0 |
-| options.initialValue | You can specify initial value, type, optional value of children node. ([Note: Because `Form` will test equality with `===` internally, we recommend to use variable as `initialValue`, instead of literal](https://github.com/ant-design/ant-design/issues/4093)) |  | n/a |  |
+| options.initialValue | You can specify initial value, type, optional value of children node. ([Note: Because `Form` will test equality with `===` internally, we recommend to use variable as `initialValue`, instead of literal](https://github.com/wsdo/daji/issues/4093)) |  | n/a |  |
 | options.normalize | Normalize value to form component, [a select-all example](https://codepen.io/afc163/pen/JJVXzG?editors=001) | function(value, prevValue, allValues): any | - |  |
 | options.preserve | Keep the field even if field removed | boolean | - | 3.12.0 |
 | options.rules | Includes validation rules. Please refer to "Validation Rules" part for details. | object\[] | n/a |  |
@@ -218,7 +218,7 @@ Note: if Form.Item has multiple children that had been decorated by `getFieldDec
 | required | indicates whether field is required | boolean | `false` |  |
 | transform | transform a value before validation | function(value) => transformedValue:any | - |  |
 | type | built-in validation type, [available options](https://github.com/yiminghe/async-validator#type) | string | 'string' |  |
-| validator | custom validate function (Note: [callback must be called](https://github.com/ant-design/ant-design/issues/5155)) | function(rule, value, callback) | - |  |
+| validator | custom validate function (Note: [callback must be called](https://github.com/wsdo/daji/issues/5155)) | function(rule, value, callback) | - |  |
 | whitespace | treat required fields that only contain whitespace as errors | boolean | `false` |  |
 
 See more advanced usage at [async-validator](https://github.com/yiminghe/async-validator).

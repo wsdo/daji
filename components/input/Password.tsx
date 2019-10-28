@@ -52,7 +52,7 @@ export default class Password extends React.Component<PasswordProps, PasswordSta
       key: 'passwordIcon',
       onMouseDown: (e: MouseEvent) => {
         // Prevent focused state lost
-        // https://github.com/ant-design/ant-design/issues/15173
+        // https://github.com/wsdo/daji/issues/15173
         e.preventDefault();
       },
     };

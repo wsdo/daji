@@ -233,7 +233,7 @@ exports[`renders ./components/input/demo/align.md correctly 1`] = `
   <span
     class="ant-typography"
   >
-    Ant Design
+    Daji Design
   </span>
   <span
     class="ant-input-affix-wrapper"

@@ -122,7 +122,7 @@ class Header extends React.Component {
       .join('/');
     let activeMenuItem = module || 'home';
     if (activeMenuItem === 'components' || location.pathname === 'changelog') {
-      activeMenuItem = 'docs/react';
+      activeMenuItem = 'docs/daji';
     }
     const isZhCN = locale === 'zh-CN';
 
@@ -131,26 +131,6 @@ class Header extends React.Component {
     });
 
     const menu = [
-      <Button
-        ghost
-        size="small"
-        onClick={this.handleLangChange}
-        className="header-lang-button"
-        key="lang-button"
-      >
-        <FormattedMessage id="app.header.lang" />
-      </Button>,
-      <Select
-        key="version"
-        className="version"
-        size="small"
-        dropdownMatchSelectWidth={false}
-        defaultValue={antdVersion}
-        onChange={this.handleVersionChange}
-        getPopupContainer={trigger => trigger.parentNode}
-      >
-        {versionOptions}
-      </Select>,
       <Menu
         className="menu-site"
         mode={menuMode}
@@ -159,78 +139,19 @@ class Header extends React.Component {
         key="nav"
       >
         <Menu.Item key="home" className="hide-in-home-page">
-          <Link to={utils.getLocalizedPathname('/', isZhCN)}>
+          <Link to={utils.getLocalizedPathname('/docs/daji/introduce', isZhCN)}>
             <FormattedMessage id="app.header.menu.home" />
           </Link>
         </Menu.Item>
-        <Menu.Item key="docs/spec">
-          <Link to={utils.getLocalizedPathname('/docs/spec/introduce', isZhCN)}>
-            <FormattedMessage id="app.header.menu.spec" />
-          </Link>
-        </Menu.Item>
-        <Menu.Item key="docs/react">
-          <Link to={utils.getLocalizedPathname('/docs/react/introduce', isZhCN)}>
+        <Menu.Item key="docs/daji">
+          <Link to={utils.getLocalizedPathname('/docs/daji/introduce', isZhCN)}>
             <FormattedMessage id="app.header.menu.components" />
           </Link>
         </Menu.Item>
-        <Menu.SubMenu
-          key="ecosystem"
-          className="hide-in-home-page"
-          title={
-            <Badge dot>
-              <FormattedMessage id="app.header.menu.ecosystem" />
-            </Badge>
-          }
-        >
-          <Menu.Item key="pro">
-            <a
-              href="http://pro.ant.design"
-              className="header-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Badge dot>
-                <FormattedMessage id="app.header.menu.pro.v4" />
-              </Badge>
-            </a>
-          </Menu.Item>
-          <Menu.Item key="ng">
-            <a
-              href="http://ng.ant.design"
-              className="header-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ant Design of Angular
-            </a>
-          </Menu.Item>
-          <Menu.Item key="vue">
-            <a
-              href="http://vue.ant.design"
-              className="header-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ant Design of Vue
-            </a>
-          </Menu.Item>
-          {isZhCN ? (
-            <Menu.Item key="course" className="hide-in-home-page">
-              <a
-                href="https://www.yuque.com/ant-design/course"
-                className="header-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ant Design 实战教程
-              </a>
-            </Menu.Item>
-          ) : null}
-        </Menu.SubMenu>
       </Menu>,
     ];
 
-    const searchPlaceholder = locale === 'zh-CN' ? '在 ant.design 中搜索' : 'Search in ant.design';
+    const searchPlaceholder = locale === 'zh-CN' ? '在 daji 中搜索' : 'Search in daji';
     return (
       <header id="header" className={headerClassName}>
         {isMobile && (
@@ -248,14 +169,14 @@ class Header extends React.Component {
         )}
         <Row>
           <Col xxl={4} xl={5} lg={5} md={5} sm={24} xs={24}>
-            <Link to={utils.getLocalizedPathname('/', isZhCN)} id="logo">
+            <Link to={utils.getLocalizedPathname('/docs/daji/introduce', isZhCN)} id="logo">
               <img
                 alt="logo"
-                src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
+                src="https://s.shudong.wang/logo.png"
               />
               <img
-                alt="Ant Design"
-                src="https://gw.alipayobjects.com/zos/rmsportal/DkKNubTaaVsKURhcVGkh.svg"
+                alt="Daji Design"
+                src="https://s.shudong.wang/logo.png"
               />
               <Santa />
             </Link>

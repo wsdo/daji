@@ -25,7 +25,7 @@ describe('ConfigProvider.Locale', () => {
     );
   });
 
-  // https://github.com/ant-design/ant-design/issues/18731
+  // https://github.com/wsdo/daji/issues/18731
   it('should not reset locale for Modal', () => {
     class App extends React.Component {
       state = {

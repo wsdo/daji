@@ -333,7 +333,7 @@ class Cascader extends React.Component<CascaderProps, CascaderState> {
   };
 
   handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    // SPACE => https://github.com/ant-design/ant-design/issues/16871
+    // SPACE => https://github.com/wsdo/daji/issues/16871
     if (e.keyCode === KeyCode.BACKSPACE || e.keyCode === KeyCode.SPACE) {
       e.stopPropagation();
     }

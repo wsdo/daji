@@ -13,7 +13,7 @@ import { ConfigConsumer, ConfigConsumerProps } from '../config-provider';
 let mousePosition: { x: number; y: number } | null;
 export const destroyFns: Array<() => void> = [];
 
-// ref: https://github.com/ant-design/ant-design/issues/15795
+// ref: https://github.com/wsdo/daji/issues/15795
 const getClickPosition = (e: MouseEvent) => {
   mousePosition = {
     x: e.pageX,

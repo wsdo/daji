@@ -418,7 +418,7 @@ describe('Table.filter', () => {
         expect(typeof wrapper.find('FilterMenu').state().selectedKeys[0]).toEqual(typeof value);
 
         // Another time of Filter show
-        // https://github.com/ant-design/ant-design/issues/15593
+        // https://github.com/wsdo/daji/issues/15593
         getDropdownWrapper(wrapper)
           .find('MenuItem')
           .first()
@@ -588,7 +588,7 @@ describe('Table.filter', () => {
     expect(wrapper.find('.ant-table-filter-icon').render()).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/13028
+  // https://github.com/wsdo/daji/issues/13028
   it('reset dropdown filter correctly', () => {
     class Demo extends React.Component {
       state = {};
@@ -641,7 +641,7 @@ describe('Table.filter', () => {
     expect(wrapper.find('.ant-input').instance().value).toBe('');
   });
 
-  // https://github.com/ant-design/ant-design/issues/17833
+  // https://github.com/wsdo/daji/issues/17833
   it('should not trigger onChange when bluring custom filterDropdown', () => {
     const onChange = jest.fn();
     const filterDropdown = ({ setSelectedKeys }) => (
@@ -675,7 +675,7 @@ describe('Table.filter', () => {
     expect(onChange).not.toHaveBeenCalled();
   });
 
-  // https://github.com/ant-design/ant-design/issues/17089
+  // https://github.com/wsdo/daji/issues/17089
   it('not crash when dynamic change filter', () => {
     const onChange = jest.fn();
 
@@ -917,7 +917,7 @@ describe('Table.filter', () => {
     expect(wrapper.find('.ant-pagination-item-active').text()).toBe('3');
   });
 
-  // https://github.com/ant-design/ant-design/issues/19274
+  // https://github.com/wsdo/daji/issues/19274
   it('should not crash', () => {
     class TestTable extends React.Component {
       state = {

@@ -23,7 +23,7 @@ There are four kinds of picker:
 
 The default locale is en-US, if you need to use other languages, recommend to use internationalized components provided by us at the entrance. Look at: [ConfigProvider](http://ant.design/components/config-provider/).
 
-If there are special needs (only modifying single component language), Please use the property: local. Example: [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json).
+If there are special needs (only modifying single component language), Please use the property: local. Example: [default](https://github.com/wsdo/daji/blob/master/components/date-picker/locale/example.json).
 
 ```jsx
 import locale from 'antd/es/date-picker/locale/zh_CN';
@@ -55,7 +55,7 @@ The following APIs are shared by DatePicker, MonthPicker, RangePicker, WeekPicke
 | disabledDate | specify the date that cannot be selected | (currentDate: moment) => boolean | - |  |
 | dropdownClassName | to customize the className of the popup calendar | string | - | 3.3.0 |
 | getCalendarContainer | to set the container of the floating layer, while the default is to create a `div` element in `body` | function(trigger) | - |  |
-| locale | localization configuration | object | [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) |  |
+| locale | localization configuration | object | [default](https://github.com/wsdo/daji/blob/master/components/date-picker/locale/example.json) |  |
 | mode | picker panel mode（[Cannot select year or month anymore?](/docs/react/faq#When-set-mode-to-DatePicker/RangePicker,-cannot-select-year-or-month-anymore?) | `time|date|month|year|decade` | 'date' |  |
 | open | open state of picker | boolean | - |  |
 | placeholder | placeholder of date input | string\|RangePicker\[] | - |  |

@@ -73,7 +73,7 @@ class Article extends React.Component {
     const { meta, description } = content;
     const { title, subtitle, filename } = meta;
     const isNotTranslated = locale === 'en-US' && typeof title === 'object';
-    const helmetTitle = `${title[locale] || title} - Ant Design`;
+    const helmetTitle = `${title[locale] || title} - Daji Design`;
     const helmetDesc = getMetaDescription(description);
     const contentChild = getMetaDescription(getChildren(content.content));
     const metaDesc = helmetDesc || contentChild;
@@ -92,7 +92,7 @@ class Article extends React.Component {
             message={
               <span>
                 This article has not been translated yet. Wanna help us out?&nbsp;
-                <a href="https://github.com/ant-design/ant-design/issues/1471">
+                <a href="https://github.com/wsdo/daji/issues/1471">
                   See this issue on GitHub.
                 </a>
               </span>

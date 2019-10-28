@@ -99,7 +99,7 @@ describe('CheckboxGroup', () => {
     expect(wrapper.instance().state.value).toEqual(['Apple']);
   });
 
-  // https://github.com/ant-design/ant-design/issues/12642
+  // https://github.com/wsdo/daji/issues/12642
   it('should trigger onChange in sub Checkbox', () => {
     const onChange = jest.fn();
     const wrapper = mount(
@@ -115,7 +115,7 @@ describe('CheckboxGroup', () => {
     expect(onChange.mock.calls[0][0].target.value).toEqual('my');
   });
 
-  // https://github.com/ant-design/ant-design/issues/16376
+  // https://github.com/wsdo/daji/issues/16376
   it('onChange should filter removed value', () => {
     const onChange = jest.fn();
     const wrapper = mount(
@@ -137,7 +137,7 @@ describe('CheckboxGroup', () => {
     expect(onChange).toHaveBeenCalledWith([2]);
   });
 
-  // https://github.com/ant-design/ant-design/issues/17297
+  // https://github.com/wsdo/daji/issues/17297
   it('onChange should keep the order of the original values', () => {
     const onChange = jest.fn();
     const wrapper = mount(

@@ -18,9 +18,9 @@ ReactDOM.render(<IconDisplay />, mountNode);
 
 | Property | Description | Type | Default | Version |
 | --- | --- | --- | --- | --- |
-| type | Type of the ant design icon | string | - |  |
+| type | Type of the Daji Design icon | string | - |  |
 | style | Style properties of icon, like `fontSize` and `color` | CSSProperties | - |  |
-| theme | Theme of the ant design icon | 'filled' \| 'outlined' \| 'twoTone' | 'outlined' | 3.9.0 |
+| theme | Theme of the Daji Design icon | 'filled' \| 'outlined' \| 'twoTone' | 'outlined' | 3.9.0 |
 | spin | Rotate icon with animation | boolean | false |  |
 | rotate | Rotate degrees (added in 3.13.0, not working in IE9) | number | - | 3.13.0 |
 | component | The component used for the root node. This will override the **`type`** property. | ComponentType<CustomIconComponentProps\> | - | 3.9.0 |
@@ -37,9 +37,9 @@ We introduced SVG icons in `3.9.0` version replacing font icons which brings ben
 - Support multiple colors for icon.
 - No need to change built-in icons with overriding styles by providing more props in component.
 
-More discussion of SVG icon reference to [#10353](https://github.com/ant-design/ant-design/issues/10353).
+More discussion of SVG icon reference to [#10353](https://github.com/wsdo/daji/issues/10353).
 
-> ⚠️ About the extra bundle size brought by all SVG icons we imported in 3.9.0, we will provide new API to allow developers importing icons as your need, you can trace [#12011](https://github.com/ant-design/ant-design/issues/12011) for further progress.
+> ⚠️ About the extra bundle size brought by all SVG icons we imported in 3.9.0, we will provide new API to allow developers importing icons as your need, you can trace [#12011](https://github.com/wsdo/daji/issues/12011) for further progress.
 >
 > Before this, you can use [webpack plugin](https://github.com/Beven91/webpack-ant-icon-loader) from community to chunk the icon file.
 

@@ -87,7 +87,7 @@ describe('List.pagination', () => {
     expect(handlePaginationChange).toHaveBeenCalledWith(2, 2);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4532
+  // https://github.com/wsdo/daji/issues/4532
   // https://codepen.io/afc163/pen/pWVRJV?editors=001
   it('should display pagination as prop pagination change between true and false', () => {
     const wrapper = mount(createList());
@@ -110,7 +110,7 @@ describe('List.pagination', () => {
     expect(renderedNames(wrapper)).toEqual(['Tom', 'Jerry']);
   });
 
-  // https://github.com/ant-design/ant-design/issues/5259
+  // https://github.com/wsdo/daji/issues/5259
   it('change to correct page when data source changes', () => {
     const wrapper = mount(createList({ pagination: { pageSize: 1 } }));
     wrapper.find('.ant-pagination-item-3').simulate('click');

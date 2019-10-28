@@ -61,7 +61,7 @@ const WithCreateOptionsForm = Form.create(formOptions)(WithCreateOptions);
 <WithCreateOptionsForm username="foo" />;
 
 // Should work with forwardRef & wrappedComponentRef
-// https://github.com/ant-design/ant-design/issues/16229
+// https://github.com/wsdo/daji/issues/16229
 if (React.forwardRef) {
   interface ForwardProps extends FormComponentProps {
     str: string;

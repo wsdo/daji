@@ -95,13 +95,13 @@ describe('Progress', () => {
     expect(wrapper.find('.ant-progress-status-success')).toHaveLength(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/15950
+  // https://github.com/wsdo/daji/issues/15950
   it('should show success status when percent is 100 and status is undefined', () => {
     const wrapper = mount(<Progress percent={100} status={undefined} />);
     expect(wrapper.find('.ant-progress-status-success')).toHaveLength(1);
   });
 
-  // https://github.com/ant-design/ant-design/pull/15951#discussion_r273062969
+  // https://github.com/wsdo/daji/pull/15951#discussion_r273062969
   it('should show success status when status is invalid', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     const wrapper = mount(<Progress percent={100} status="invalid" />);

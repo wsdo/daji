@@ -248,7 +248,7 @@ describe('Upload', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/14779
+  // https://github.com/wsdo/daji/issues/14779
   it('should contain input file control if upload button is hidden', () => {
     const wrapper = mount(
       <Upload action="http://upload.com">
@@ -261,7 +261,7 @@ describe('Upload', () => {
     expect(wrapper.find('input[type="file"]').length).toBe(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/14298
+  // https://github.com/wsdo/daji/issues/14298
   it('should not have id if upload children is null, avoid being triggered by label', () => {
     // eslint-disable-next-line
     class Demo extends React.Component {
@@ -292,7 +292,7 @@ describe('Upload', () => {
     expect(wrapper.find('input#upload').length).toBe(0);
   });
 
-  // https://github.com/ant-design/ant-design/issues/16478
+  // https://github.com/wsdo/daji/issues/16478
   it('should not have id if upload is disabled, avoid being triggered by label', () => {
     // eslint-disable-next-line
     class Demo extends React.Component {
@@ -483,7 +483,7 @@ describe('Upload', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/18902
+  // https://github.com/wsdo/daji/issues/18902
   it('should not abort uploading until return value of onRemove is resolved as true', done => {
     let wrapper;
 
@@ -546,7 +546,7 @@ describe('Upload', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/14439
+  // https://github.com/wsdo/daji/issues/14439
   it('should allow call abort function through upload instance', () => {
     const wrapper = mount(
       <Upload>

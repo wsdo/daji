@@ -79,7 +79,7 @@ describe('Upload List', () => {
     canvasSpy.mockRestore();
   });
 
-  // https://github.com/ant-design/ant-design/issues/4653
+  // https://github.com/wsdo/daji/issues/4653
   it('should use file.thumbUrl for <img /> in priority', () => {
     const wrapper = mount(
       <Upload defaultFileList={fileList} listType="picture">
@@ -94,7 +94,7 @@ describe('Upload List', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/7269
+  // https://github.com/wsdo/daji/issues/7269
   it('should remove correct item when uid is 0', async () => {
     const list = [
       {
@@ -473,7 +473,7 @@ describe('Upload List', () => {
     expect(wrapper.render()).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/7762
+  // https://github.com/wsdo/daji/issues/7762
   it('work with form validation', () => {
     let errors;
     class TestForm extends React.Component {

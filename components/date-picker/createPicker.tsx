@@ -159,7 +159,7 @@ export default function createPicker(TheCalendar: React.ComponentClass): any {
       const pickerStyle: { minWidth?: number } = {};
       if (props.showTime) {
         calendarProps = {
-          // fix https://github.com/ant-design/ant-design/issues/1902
+          // fix https://github.com/wsdo/daji/issues/1902
           onSelect: this.handleChange,
         };
         pickerStyle.minWidth = 195;

@@ -98,7 +98,7 @@ describe('message', () => {
     });
   });
 
-  // https://github.com/ant-design/ant-design/issues/8201
+  // https://github.com/wsdo/daji/issues/8201
   it('should hide message correctly', () => {
     let hide;
     class Test extends React.Component {
@@ -127,7 +127,7 @@ describe('message', () => {
     expect(document.querySelectorAll('.ant-message-notice .anticon').length).toBe(0);
   });
 
-  // https://github.com/ant-design/ant-design/issues/8201
+  // https://github.com/wsdo/daji/issues/8201
   it('should destroy messages correctly', () => {
     // eslint-disable-next-line
     class Test extends React.Component {

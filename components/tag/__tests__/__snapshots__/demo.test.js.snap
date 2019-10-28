@@ -137,7 +137,7 @@ exports[`renders ./components/tag/demo/basic.md correctly 1`] = `
     class="ant-tag"
   >
     <a
-      href="https://github.com/ant-design/ant-design/issues/1862"
+      href="https://github.com/wsdo/daji/issues/1862"
     >
       Link
     </a>

@@ -21,7 +21,7 @@ if (typeof window !== 'undefined') {
       removeListener() {},
     };
   };
-  // ref: https://github.com/ant-design/ant-design/issues/18774
+  // ref: https://github.com/wsdo/daji/issues/18774
   if (!window.matchMedia) window.matchMedia = matchMediaPolyfill as any;
 }
 
@@ -238,7 +238,7 @@ class InternalSider extends React.Component<InternalSideProps, SiderState> {
       ...style,
       flex: `0 0 ${siderWidth}`,
       maxWidth: siderWidth, // Fix width transition bug in IE11
-      minWidth: siderWidth, // https://github.com/ant-design/ant-design/issues/6349
+      minWidth: siderWidth, // https://github.com/wsdo/daji/issues/6349
       width: siderWidth,
     };
     const siderCls = classNames(className, prefixCls, `${prefixCls}-${theme}`, {

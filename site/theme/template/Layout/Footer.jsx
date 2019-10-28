@@ -39,7 +39,7 @@ class Footer extends React.Component {
         title: <FormattedMessage id="app.footer.resources" />,
         items: [
           {
-            title: 'Ant Design Pro',
+            title: 'Daji Design Pro',
             url: 'https://fedoc.kaikeba.com',
             openExternal: true,
           }
@@ -102,8 +102,8 @@ class Footer extends React.Component {
       content: (
         <div>
           <img
-            src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
-            alt="Ant Design"
+            src="https://s.shudong.wang/logo.png"
+            alt="Daji Design"
           />
           <p>
             {messages['app.publish.greeting']}

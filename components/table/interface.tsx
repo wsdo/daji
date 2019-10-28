@@ -148,7 +148,7 @@ export interface TableEventListeners {
   onContextMenu?: (arg: React.MouseEvent) => void;
   onMouseEnter?: (arg: React.MouseEvent) => void;
   onMouseLeave?: (arg: React.MouseEvent) => void;
-  [name: string]: any; // https://github.com/ant-design/ant-design/issues/17245#issuecomment-504807714
+  [name: string]: any; // https://github.com/wsdo/daji/issues/17245#issuecomment-504807714
 }
 
 export interface CheckboxPropsCache {

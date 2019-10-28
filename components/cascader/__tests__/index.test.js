@@ -340,7 +340,7 @@ describe('Cascader', () => {
     ).toBe(3);
   });
 
-  // https://github.com/ant-design/ant-design/issues/12970
+  // https://github.com/wsdo/daji/issues/12970
   it('can use filedNames too, for compatibility', () => {
     const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     const customerOptions = [
@@ -454,7 +454,7 @@ describe('Cascader', () => {
     errorSpy.mockRestore();
   });
 
-  // https://github.com/ant-design/ant-design/issues/17690
+  // https://github.com/wsdo/daji/issues/17690
   it('should not breaks when children is null', () => {
     const optionsWithChildrenNull = [
       {
@@ -474,7 +474,7 @@ describe('Cascader', () => {
     }).not.toThrow();
   });
 
-  // https://github.com/ant-design/ant-design/issues/18176
+  // https://github.com/wsdo/daji/issues/18176
   it('have a notFoundContent that fit trigger input width', () => {
     const wrapper = mount(
       <Cascader

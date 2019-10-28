@@ -42,7 +42,7 @@ describe('Badge', () => {
     ).toEqual('Custom title');
   });
 
-  // https://github.com/ant-design/ant-design/issues/10626
+  // https://github.com/wsdo/daji/issues/10626
   it('should be composable with Tooltip', () => {
     const wrapper = mount(
       <Tooltip title="Fix the error">
@@ -83,7 +83,7 @@ describe('Badge', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/13694
+  // https://github.com/wsdo/daji/issues/13694
   it('should support offset when count is a ReactNode', () => {
     const wrapper = render(
       <Badge count={<span className="custom" style={{ color: '#f5222d' }} />} offset={[10, 20]}>
@@ -95,13 +95,13 @@ describe('Badge', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  // https://github.com/ant-design/ant-design/issues/15349
+  // https://github.com/wsdo/daji/issues/15349
   it('should color style  works on Badge', () => {
     const wrapper = mount(<Badge style={{ color: 'red' }} status="success" text="Success" />);
     expect(wrapper.find('.ant-badge-status-text').props().style.color).toBe('red');
   });
 
-  // https://github.com/ant-design/ant-design/issues/15799
+  // https://github.com/wsdo/daji/issues/15799
   it('render correct with negative number', () => {
     const wrapper = render(
       <div>

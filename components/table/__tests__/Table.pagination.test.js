@@ -126,7 +126,7 @@ describe('Table.pagination', () => {
     expect(handlePaginationChange).toHaveBeenCalledWith(2, 2);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4532
+  // https://github.com/wsdo/daji/issues/4532
   // https://codepen.io/afc163/pen/dVeNoP?editors=001
   it('should have pager when change pagination from false to undefined', () => {
     const wrapper = mount(createTable({ pagination: false }));
@@ -136,7 +136,7 @@ describe('Table.pagination', () => {
     expect(wrapper.find('.ant-pagination-item-active')).toHaveLength(1);
   });
 
-  // https://github.com/ant-design/ant-design/issues/4532
+  // https://github.com/wsdo/daji/issues/4532
   // https://codepen.io/afc163/pen/pWVRJV?editors=001
   it('should display pagination as prop pagination change between true and false', () => {
     const wrapper = mount(createTable());
@@ -158,7 +158,7 @@ describe('Table.pagination', () => {
     expect(renderedNames(wrapper)).toEqual(['Jack', 'Lucy', 'Tom', 'Jerry']);
   });
 
-  // https://github.com/ant-design/ant-design/issues/5259
+  // https://github.com/wsdo/daji/issues/5259
   it('change to correct page when data source changes', () => {
     const wrapper = mount(createTable({ pagination: { pageSize: 1 } }));
     wrapper.find('.ant-pagination-item-3').simulate('click');

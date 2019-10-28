@@ -95,7 +95,7 @@ this.form // => The instance of CustomizedForm
 | isFieldValidating | 判断一个输入控件是否在校验状态 | Function(name) |  |
 | resetFields | 重置一组输入控件的值（为 `initialValue`）与状态，如不传入参数，则重置所有组件 | Function(\[names: string\[]]) |  |
 | setFields | 设置一组输入控件的值与错误状态：[代码](https://github.com/react-component/form/blob/3b9959b57ab30b41d8890ff30c79a7e7c383cad3/examples/server-validate.js#L74-L79) | ({<br />&nbsp;&nbsp;\[fieldName\]: {value: any, errors: \[Error\] }<br />}) => void |  |
-| setFieldsValue | 设置一组输入控件的值（注意：不要在 `componentWillReceiveProps` 内使用，否则会导致死循环，[原因](https://github.com/ant-design/ant-design/issues/2985)） | (<br />&nbsp;&nbsp;{ \[fieldName\]&#x3A; value },<br />&nbsp;&nbsp;callback: Function<br />) => void |  |
+| setFieldsValue | 设置一组输入控件的值（注意：不要在 `componentWillReceiveProps` 内使用，否则会导致死循环，[原因](https://github.com/wsdo/daji/issues/2985)） | (<br />&nbsp;&nbsp;{ \[fieldName\]&#x3A; value },<br />&nbsp;&nbsp;callback: Function<br />) => void |  |
 | validateFields | 校验并获取一组输入域的值与 Error，若 fieldNames 参数为空，则校验全部组件 | (<br />&nbsp;&nbsp;\[fieldNames: string\[]],<br />&nbsp;&nbsp;\[options: object\],<br />&nbsp;&nbsp;callback(errors, values)<br />) => void |  |
 | validateFieldsAndScroll | 与 `validateFields` 相似，但校验完后，如果校验不通过的菜单域不在可见范围内，则自动滚动进可见范围 | 参考 `validateFields` |  |
 
@@ -179,7 +179,7 @@ validateFields(['field1', 'field2'], options, (errors, values) => {
 | --- | --- | --- | --- | --- |
 | id | 必填输入控件唯一标志。支持嵌套式的[写法](https://github.com/react-component/form/pull/48)。 | string |  |  |
 | options.getValueFromEvent | 可以把 onChange 的参数（如 event）转化为控件的值 | function(..args) | [reference](https://github.com/react-component/form#option-object) |  |
-| options.initialValue | 子节点的初始值，类型、可选值均由子节点决定([注意：由于内部校验时使用 `===` 判断是否变化，建议使用变量缓存所需设置的值而非直接使用字面量](https://github.com/ant-design/ant-design/issues/4093)) |  |  |  |
+| options.initialValue | 子节点的初始值，类型、可选值均由子节点决定([注意：由于内部校验时使用 `===` 判断是否变化，建议使用变量缓存所需设置的值而非直接使用字面量](https://github.com/wsdo/daji/issues/4093)) |  |  |  |
 | options.normalize | 转换默认的 value 给控件，[一个选择全部的例子](https://codepen.io/afc163/pen/JJVXzG?editors=001) | function(value, prevValue, allValues): any | - |  |
 | options.preserve | 即便字段不再使用，也保留该字段的值 | boolean | - | 3.12.0 |
 | options.rules | 校验规则，参考下方文档 | object\[] |  |  |
@@ -220,7 +220,7 @@ validateFields(['field1', 'field2'], options, (errors, values) => {
 | required | 是否必选 | boolean | `false` |  |
 | transform | 校验前转换字段值 | function(value) => transformedValue:any | - |  |
 | type | 内建校验类型，[可选项](https://github.com/yiminghe/async-validator#type) | string | 'string' |  |
-| validator | 自定义校验（注意，[callback 必须被调用](https://github.com/ant-design/ant-design/issues/5155)） | function(rule, value, callback) | - |  |
+| validator | 自定义校验（注意，[callback 必须被调用](https://github.com/wsdo/daji/issues/5155)） | function(rule, value, callback) | - |  |
 | whitespace | 必选时，空格是否会被视为错误 | boolean | `false` |  |
 
 更多高级用法可研究 [async-validator](https://github.com/yiminghe/async-validator)。

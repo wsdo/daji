@@ -98,7 +98,7 @@ module.exports = {
       'antd/lib': path.join(process.cwd(), 'components'),
       'antd/es': path.join(process.cwd(), 'components'),
       antd: path.join(process.cwd(), 'index'),
-      '@daji': path.join(process.cwd(), 'src'),
+      '@kkb/daji': path.join(process.cwd(), 'src'),
       site: path.join(process.cwd(), 'site'),
       'react-router': 'react-router/umd/ReactRouter',
       'react-intl': 'react-intl/dist',
@@ -132,23 +132,22 @@ module.exports = {
       type: 'javascript/auto',
     },
     {
-        test: /\.styl/,
+        test: /\.styl$/,
         use: [
           'style-loader',
           {
             loader:'css-loader',
-            options: {importLoaders: 1}
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: 'diji-[local]-',
+                // localIdentName: 'diji-[local]-[hash:base64:5]',
+                context: path.resolve(__dirname, 'src'),
+                hashPrefix: 'diji',
+              },
+              // localIdentName: '[name]__[local]___[hash:base64:5]'
+            }
           },
-          // {
-          //   loader: 'postcss-loader',
-          //   options: {
-          //     plugins: [
-          //       autoprefixer({
-          //         browsers: ['> 1%', 'IE 7']
-          //       })
-          //     ]
-          //   }
-          // },
           'stylus-loader',
         ],
       }

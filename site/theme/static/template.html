@@ -46,7 +46,7 @@
             // to enUS
             return /\/?index-cn/.test(pathname) ? '/' : pathname.replace('-cn', '');
           } else if (pathname === '/') {
-            return '/index-cn';
+            return '/docs/daji/introduce';
           } else if (pathname.endsWith('/')) {
             return pathname.replace(/\/$/, '-cn/');
           }

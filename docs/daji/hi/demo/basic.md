@@ -7,7 +7,7 @@ title: hello stark
 基本用法
 
 ```jsx
-import { Hi } from '@daji';
+import { Hi } from '@kkb/daji';
 
 class App extends React.Component {
   render() {

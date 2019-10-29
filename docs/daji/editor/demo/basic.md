@@ -6,7 +6,7 @@ title: 富文本编辑器
 基本用法
 
 ```jsx
-import { Editor } from '@daji';
+import { Editor } from '@kkb/daji';
 
 class App extends React.Component {
   state = {
